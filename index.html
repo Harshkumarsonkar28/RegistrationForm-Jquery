@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css"/>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <div id="success"></div>
+    <div class="container" id="myform">
+       <div class="inputdiv">
+         <label for="email">Email:</label>
+        <input type="text" name="email" id="email"/>
+        <span class="error" id="emailerror"></span>
+       </div>
+         <div class="inputdiv">
+            <label for="phone">Phone:</label>
+        <input type="number" name="phone" id="phone"/>
+         <span class="error" id="phoneerror"></span>
+         </div>
+        <div class="inputdiv">
+             <label for="password">Password:</label>
+        <input type="password" name="password" id="password"/>
+         <span class="error" id="pwderror"></span>
+
+        </div>
+        <div class="inputdiv">
+             <label for="confpassword">ConfirmPassword:</label>
+        <input type="password" name="confpassword" id="confpassword"/>
+         <span class="error" id="cnfpwderror"></span>
+
+        </div>
+        <input type="submit" id="submit"/>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
