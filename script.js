@@ -1,7 +1,37 @@
 $(document).ready(function () {
+
+
+  // password show /hide
+$("#show-pwd").click(function(e){
+  e.preventDefault()
+$("#password").attr("type","text");
+$("#show-pwd").hide();
+$("#hide-pwd").show()
+})
+$("#hide-pwd").click(function(e){
+  e.preventDefault()
+$("#password").attr("type","password");
+$("#hide-pwd").hide();
+$("#show-pwd").show()
+})
+  
+// confirm password show/hide
+$("#conf-show-pwd").click(function(e){
+  e.preventDefault()
+$("#confpassword").attr("type","text");
+$("#conf-show-pwd").hide();
+$("#conf-hide-pwd").show()
+})
+$("#conf-hide-pwd").click(function(e){
+  e.preventDefault()
+$("#confpassword").attr("type","password");
+$("#conf-hide-pwd").hide();
+$("#conf-show-pwd").show()
+})
+
   $("#submit").click(function (e) {
     e.preventDefault();
-
+   
     let isvalid = true;
 
     // Email
@@ -82,6 +112,8 @@ $(document).ready(function () {
       $("#pwderror").text("");
     }
 
+ 
+
     // conmfirm password
 
     let confpassword = $("#confpassword").val().trim();
@@ -100,5 +132,7 @@ $(document).ready(function () {
       $(".container").find("input").val(""); //after all validation is correct all input field is clear
       $("#success").text("Successfully Submitted");
     }
+
+   
   });
 });

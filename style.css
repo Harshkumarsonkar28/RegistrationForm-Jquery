@@ -36,6 +36,7 @@ input {
     border: 1px solid #ccc;
     font-size: 16px;
     transition: 0.3s ease-in-out;
+   
 }
 
 .inputdiv {
@@ -71,4 +72,33 @@ input {
     text-align: center;
     font-weight: 700;
     text-shadow: 1px 2px 2px white;
+}
+#show-pwd,
+#hide-pwd,
+#conf-show-pwd,
+#conf-hide-pwd {
+    padding: 8px 12px;
+    margin-top: 3px;
+    background: linear-gradient(90deg, #43e97b, #38f9d7);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#show-pwd:hover,
+#hide-pwd:hover,
+#conf-show-pwd:hover,
+#conf-hide-pwd:hover {
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    transform: scale(1.05);
+}
+
+#hide-pwd,
+#conf-hide-pwd {
+    display: none;
 }

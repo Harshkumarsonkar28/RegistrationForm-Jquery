@@ -24,14 +24,18 @@
          </div>
         <div class="inputdiv">
              <label for="password">Password:</label>
-        <input type="password" name="password" id="password"/>
+             <div style="display: flex; align-items: center; gap: 10px;">
+        <input type="password" name="password" id="password"/><button id="show-pwd">Show</button><button id="hide-pwd">Hide</button>
+        </div>
          <span class="error" id="pwderror"></span>
 
         </div>
         <div class="inputdiv">
              <label for="confpassword">ConfirmPassword:</label>
-        <input type="password" name="confpassword" id="confpassword"/>
-         <span class="error" id="cnfpwderror"></span>
+             <div style="display: flex; align-items: center; gap: 10px;">
+        <input type="password" name="confpassword" id="confpassword"/><button id="conf-show-pwd">Show</button><button id="conf-hide-pwd">Hide</button>
+        </div> 
+        <span class="error" id="cnfpwderror"></span>
 
         </div>
         <input type="submit" id="submit"/>
