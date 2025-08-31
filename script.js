@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+  // only user enter 10 digit
+
+  $("#phone").on('input',function(){
+    let val = $(this).val().replace(/\D/g,"");
+    if(val.length >10){
+      val = val.slice(0,10);
+    }
+    $(this).val(val);
+  })
 
   // password show /hide
 $("#show-pwd").click(function(e){
